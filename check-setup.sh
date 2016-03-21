@@ -11,7 +11,7 @@ cur_lab=4
 system=$(uname -a | cut -d' ' -f1,2)
 if [ "$system" == "Linux precise32" ] || [ "$system" == "Linux vagrant-ubuntu-trusty-64" ]
 then
-  sys_vagrant="1"  
+  sys_vagrant="1"
   echo "Running on Vagrant guest"
 elif [ $short_system == "Darwin"  ]
 then
@@ -49,7 +49,7 @@ then
     install_status=$(cd lab4; npm install --no-bin-links)
 
     node_status=$(cd lab4;npm ls 2>&1)
-  
+
     if [[ $node_status != *"UNMET DEPENDENCY"* ]]
     then
       echo "PASS: Repair successful. All node packages installed."
@@ -90,7 +90,7 @@ else
     fi
   fi
 
-  
+
   vagrant_check=$(grep MSB Vagrantfile | wc -l | xargs)
 
   if [ $vagrant_check == "4" ]
@@ -104,7 +104,7 @@ else
   hcidirs=$(ls)
 
   # current lab hardcoded
-  for i in {1..4} 
+  for i in {1..4}
   do
     target_dir="lab$i"
   if [[ $hcidirs == *"$target_dir"* ]]

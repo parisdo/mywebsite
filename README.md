@@ -1,4 +1,4 @@
-lab4
+PERSONAL WEBSITE
 ====
 
-Lab 4: Programming with Javascript
+Paris Do
