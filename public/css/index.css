@@ -18,7 +18,7 @@
 
 /* color of title text */
 .front-page {
-  color: #333333;
+  color: black;
 }
 
 /* push navbar items to left */
@@ -26,9 +26,10 @@ li.push-item {
   padding-right: 100px;
 }
 
-.col-lg-12 {
+.col-xs-12 {
   padding-left: 8%;
   padding-right: 8%;
+  padding-bottom: 5%;
 }
 
 .intro-section {
@@ -38,9 +39,9 @@ li.push-item {
 }
 /* change size and left align title */
 h1 {
-  font-size: 410%;
+  font-size: 230%;
   display: inline;
-  line-height: 90px;
+  line-height: 50px;
 }
 
 .container .front-page {
@@ -62,7 +63,7 @@ h1 {
 .example3 {
   padding-top: 100px;
   border-bottom: solid 5px;
-  border-bottom-color: yellow;
+  border-bottom-color: #ffcc00;
 }
 
 /* color of navbar items */
@@ -75,7 +76,8 @@ h2 {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: black;
 }
 
 /************ underline Navbar text animation *****************/
@@ -104,4 +106,69 @@ a:hover .menuHighlight {
     -webkit-transform: scale(1, 1);
     -moz-transform: scale(1, 1);
     transform: scale(1, 1);
+}
+
+li {
+  font-size: 100%;
+  font-weight: 100;
+}
+
+ul {
+  padding-left:0;
+}
+
+.col-lg-12{
+   padding-bottom: 100px;
+}
+
+#vs {
+  border-left: 1px solid black;
+  padding-left: 40px;
+  align-items: left;
+  margin-left: -10%;
+}
+
+td {
+    padding: 20px;
+    padding-top:30px;
+}
+
+#type-font {
+  font-family: 'PT Mono', ;
+}
+
+h3 b{
+  color: white;
+  background-color: black;
+}
+
+/* highlight text */
+span.highlight {
+    background-color: yellow;
+}
+
+/* style for download resume button */
+#downloadresume {
+  margin-top: 60px;
+  padding: 10px;
+  border: 1px outset black;
+background-color: white;
+ -webkit-transition: background 1s;
+}
+
+#downloadresume:hover {
+  background: black;
+}
+
+#downloadresume:hover h4{
+  color: white;
+}
+
+#projects {
+  padding-left: 5%;
+  padding-right: 40%;
+}
+
+#contact {
+  align-items: center;
 }
